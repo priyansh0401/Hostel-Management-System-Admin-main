@@ -20,7 +20,7 @@ const IssueDisplay = ({email,hostelName}) => {
     const [rowID, setRowID] = useState(false)
 
     async function getIssueDetails(){
-        const issueDetails = await axios.get(`https://hms-backend-89o3.onrender.com/issues/hostel/${hostelName}`,{
+        const issueDetails = await axios.get(`https://hostel-management-system-backend-master-tanya.vercel.app/issues/hostel/${hostelName}`,{
             headers:{
                 'Content-Type': 'application/json',
             }
@@ -30,7 +30,7 @@ const IssueDisplay = ({email,hostelName}) => {
     }
 
     async function getUserDetails(){
-        const res = await axios.get(`https://hms-backend-89o3.onrender.com/admin/${email}`,{
+        const res = await axios.get(`https://hostel-management-system-backend-master-tanya.vercel.app/admin/${email}`,{
             headers:{
                 'Content-Type': 'application/json',
             }

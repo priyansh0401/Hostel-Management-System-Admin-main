@@ -14,7 +14,7 @@ const adminDashboard = () => {
     const [adminInfo, setAdminInfo] = useState({})
 
     const getAdminData = async () => {
-      const adminData = await axios.get(`https://hms-backend-89o3.onrender.com/admin/${data.user.email}`,{
+      const adminData = await axios.get(`https://hostel-management-system-backend-master-tanya.vercel.app/admin/${data.user.email}`,{
         headers:{
           'Content-Type':'application/json',
         }
