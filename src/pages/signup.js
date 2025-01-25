@@ -15,7 +15,7 @@ const signup = () => {
         console.log(e)
         console.log('submit clicked')
         setLoading(true)
-        const res = await fetch('https://hostel-management-system-backend-master-tanya.vercel.app/admin/createAdmin',{
+        const res = await fetch('https://hostel-management-system-backend-master-tanya.vercel.app/createAdmin',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
